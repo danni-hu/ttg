@@ -2,9 +2,13 @@
   "$schema": "https://schema.tauri.app/config/2",
   "productName": "ttg",
   "version": "0.1.0",
-  "identifier": "com.zhu48.ttg",
+  "identifier": "com.danni-hu.ttg",
   "build": {
-    "frontendDist": "../src"
+    "beforeDevCommand": "trunk serve",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "trunk build",
+    "frontendDist": "../dist",
+    "removeUnusedCommands": true
   },
   "app": {
     "withGlobalTauri": true,
